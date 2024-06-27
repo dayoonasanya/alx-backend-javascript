@@ -1,14 +1,27 @@
-export default class HolbertonClass {
-  constructor(size, location) {
-    this._size = size;
-    this._location = location;
+export default class Airport {
+  constructor(name, code) {
+    if (typeof name !== 'string' || typeof code !== 'string') throw new Error();
+    this._name = name;
+    this._code = code;
   }
 
-  valueOf() {
-    return this._size;
+  get name() {
+    return this._name;
   }
 
-  toString() {
-    return this._location;
+  set name(value) {
+    this._name = value;
+  }
+
+  get code() {
+    return this._code;
+  }
+
+  set code(value) {
+    this._code = value;
+  }
+
+  get [Symbol.toStringTag]() {
+    return this.code;
   }
 }
