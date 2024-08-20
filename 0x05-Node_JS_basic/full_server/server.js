@@ -1,5 +1,5 @@
 import express from 'express';
-import mapRoutes from './routes/index.js';
+import mapRoutes from './routes';
 
 const app = express();
 const PORT = 1245;
@@ -10,3 +10,4 @@ app.listen(PORT, () => {
 });
 
 export default app;
+module.exports = app;

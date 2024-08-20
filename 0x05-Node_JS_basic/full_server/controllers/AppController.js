@@ -1,6 +1,6 @@
 /**
  * Contains the miscellaneous route handlers.
- * @author dayoonasanya.
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  */
 class AppController {
   static getHomepage(request, response) {
@@ -9,3 +9,4 @@ class AppController {
 }
 
 export default AppController;
+module.exports = AppController;
