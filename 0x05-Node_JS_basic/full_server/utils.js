@@ -45,5 +45,5 @@ const readDatabase = (dataPath) => new Promise((resolve, reject) => {
   }
 });
 
-export default readDatabase;
-module.exports = readDatabase;
+// Use only this line for ES module exports
+export { readDatabase };
