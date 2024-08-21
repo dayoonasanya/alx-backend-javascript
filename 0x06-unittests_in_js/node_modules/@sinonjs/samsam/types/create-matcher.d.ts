@@ -37,4 +37,4 @@ declare namespace createMatcher {
     export const date: any;
     export const symbol: any;
 }
-import isMatcher = require("./create-matcher/is-matcher");
+declare var isMatcher: typeof import("./create-matcher/is-matcher");

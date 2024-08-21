@@ -1,6 +1,6 @@
 "use strict";
 
-const walkObject = require("./util/core/walk-object");
+var walkObject = require("./util/core/walk-object");
 
 function filter(object, property) {
     return object[property].restore && object[property].restore.sinon;

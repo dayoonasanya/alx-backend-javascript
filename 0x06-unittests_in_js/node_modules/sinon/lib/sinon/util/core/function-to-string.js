@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function toString() {
-    let i, prop, thisValue;
+    var i, prop, thisValue;
     if (this.getCall && this.callCount) {
         i = this.callCount;
 
