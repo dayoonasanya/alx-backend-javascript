@@ -4,13 +4,11 @@
   "description": "0x06-unittests_in_js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require esm"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "chai": "^5.1.1",
+    "esm": "^3.2.25",
     "mocha": "^10.7.3",
     "sinon": "^18.0.0"
   },
