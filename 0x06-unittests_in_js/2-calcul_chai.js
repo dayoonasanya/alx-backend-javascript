@@ -1,17 +1,18 @@
 function calculateNumber(type, a, b) {
-  const aRounded = Math.round(a);
-  const bRounded = Math.round(b);
-
-  if (type === 'SUM') {
-    return aRounded + bRounded;
-  } else if (type === 'SUBTRACT') {
-    return aRounded - bRounded;
-  } else if (type === 'DIVIDE') {
-    if (bRounded === 0) {
-      return 'Error';
+    if (typeof (type) == String || type == 'SUM' || type == 'SUBTRACT' || type == 'DIVIDE') {
+        if (type == 'SUM') {
+            return Math.round(a) + Math.round(b);
+        } else if (type == 'SUBTRACT') {
+            return Math.round(a) - Math.round(b);
+        } else if (type == 'DIVIDE') {
+            if (Math.round(b) != 0) {
+                return Math.round(a) / Math.round(b);
+            }
+            return 'Error';
+        }
+    } else {
+        return 'Error'
     }
-    return aRounded / bRounded;
-  }
 }
 
 module.exports = calculateNumber;
